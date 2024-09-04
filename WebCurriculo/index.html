@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name = "viewport" content="width=device-width, initial-scale=1.0">
         <title>Currículo - Otávio Augusto</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
         <style>
             hr {
                 border-color: black;
@@ -13,30 +14,36 @@
             }
         </style>
     </head>
-    <body style="display: flex; flex-direction: column; align-items: center; font-family: Arial; background-image: url(img/background.jpg); background-repeat: repeat; background-size: 50%; margin: 0px; padding: 20px; padding-right: 350px; padding-left: 350px;">
-        <div style="background-color: rgba(238, 211, 162, 0.932); padding: 20px;">
-            <div style="display: flex; flex-direction: row; align-items: center; gap: 20px;">
+    <body>
+        <div class="curriculum">
+            <div class="information">
                 <div>
-                    <img style="border: 4.5px solid black;" src="img/Perfil.jpg" alt="Minha foto" title="Otávio Augusto de Melo Ribeiro" width="209" height="210">
+                    <img src="img/Perfil.jpg" alt="Minha foto" title="Otávio Augusto de Melo Ribeiro width="209" height="210">
                 </div>
                 <div>
-                    <h1 style="font-size: 200%;">Otávio Augusto de Melo<br/>Ribeiro</h1>
-                    <h2 style="font-size: 100%;"><address>Guaranésia - MG | Gabriela Teixeira de Vasconcelos 219</address></h2>
-                    <h3 style="font-size: 95%;">Email: <a href="mailto:otavio208augustoribeiro@gmail.com" style="color: black;">otavio208augustoribeiro@gmail.com</a></h3>
+                    <h1>Otávio Augusto de Melo<br/>Ribeiro</h1>
+                    <h2><address>Guaranésia - MG | Gabriela Teixeira de Vasconcelos 219</address></h2>
+                    <h3>Email: <a href="mailto:otavio208augustoribeiro@gmail.com">otavio208augustoribeiro@gmail.com</a></h3>
                 </div>
             </div><hr>
-            <div>
-                <h3 style="font-size: 120%">Formação Pessoal:</h3>
+            <div class="personal_training">
+                <h3>Formação Pessoal:</h3>
                 <p>Cursando o 5° Período de Análise e Desenvolvimento de Sistemas<br>
                 <b>Faculdade de Tecnologia de Mococa (FATEC)</b></p>
             </div><hr>
-            <div>
-                <h3 style="font-size: 120%">Atividades Profissionais:</h3>
-                <p>Operador de Máquinas na empresa Alfagomma ltda do Brasil<br>
-                <b>[janeiro de 2022 - março de 2023]</b></p>
+            <div class="professional_activities">
+                <h3>Atividades Profissionais:</h3>
+                <div>
+                    <p>Operador de Máquinas na empresa Alfagomma ltda do Brasil<br>
+                    <b>[Janeiro de 2022 - Março de 2023]</b></p>
+                </div>
+                <div>
+                    <p>Estágiário em Desenvolvimento na empresa Sellentt</br>
+                    <b>[Setembro de 2024 - Hoje]</b></p>
+                </div>
             </div><hr>
-            <div>
-                <h3 style="font-size: 120%">Cursos:</h3>
+            <div class="courses">
+                <h3>Cursos:</h3>
                 <p><b>MiniCurso:</b> Introdução a linguagem Go e a Containers utilizando
                 o Docker - Semana<br/>Tecnológica Fatec Mococa</p>
                 <p><b>MiniCurso:</b> Ciência de dados com Python - 3ª Semana Tecnológica
