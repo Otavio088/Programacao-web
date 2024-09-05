@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Questões</title>
+        <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <link rel="stylesheet" href="css/questoes-style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Questões</h1>
+        </header>
+        <main>
+            <form action="">
+                <table>
+                    <tr>
+                        <td><label name="pizza">Você gosta da nossa pizza?</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="sim" name="pizza" value="sim" class="input_radio">
+                            <label for="sim">Sim</label>
+                            <input type="radio" id="nao" name="pizza" value="nao" class="input_radio">
+                            <label for="nao">Não</label><br><br>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td><label name="pagamento">Qual modo de pagamento você mais usa?</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="dinheiro" name="pagamento" value="dinheiro" class="input_radio">
+                            <label for="dinheiro">Dinheiro</label>
+                            <input type="radio" id="cartao" name="pagamento" value="cartao" class="input_radio">
+                            <label for="cartao">Cartão</label>
+                            <input type="radio" id="pix" name="pagamento" value="pix" class="input_radio">
+                            <label for="pix">Pix</label>
+                            <input type="radio" id="outro" name="pagamento" value="outro" class="input_radio">
+                            <label for="outro">Outro</label><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label name="comer">Onde costuma comer nossas pizzas?</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="local" name="comer" value="local" class="input_radio">
+                            <label for="local">No local</label>
+                            <input type="radio" id="casa" name="comer" value="casa" class="input_radio">
+                            <label for="casa">Em casa</label>
+                            <input type="radio" id="outro_comer" name="comer" value="outro" class="input_radio">
+                            <label for="outro_comer">Outro</label><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label name="atendimento">De uma nota ao nosso atendimento:</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="0-4" name="atendimento" value="0-4" class="input_radio">
+                            <label for="0-4">0-4</label>
+                            <input type="radio" id="5-7" name="atendimento" value="5-7" class="input_radio">
+                            <label for="5-7">5-7</label>
+                            <input type="radio" id="8-10" name="atendimento" value="8-10" class="input_radio">
+                            <label for="8-10">8-10</label><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="melhora">Nos sugira alguma melhora:</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea name="melhora" id="melhora"></textarea><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Enviar" class="button_enviar"></td>
+                    </tr>
+                    <tr>
+                        <td><a href="index.html"><input type="button" value="Voltar" class="button_voltar"></a></td>
+                    </tr>
+                </table>
+            </form>
+        </main>
+    </body>
+</html>

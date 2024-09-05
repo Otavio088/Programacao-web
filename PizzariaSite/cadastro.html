@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+        <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <link rel="stylesheet" href="css/cadastro-style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>CADASTRO</h1>
+        </header>
+        <main>
+            <form action="">
+                <table width="100%">
+                    <tr>
+                        <td><label for="nome">Nome:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="nome" name="nome" class="input_txt"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" id="email" name="email" class="input_txt"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="senha">Senha:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" id="senha" name="senha" class="input_txt"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="endereco">Endereço:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="endereco" name="endereco" class="input_txt"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sexo">Sexo:</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="masculino" name="sexo" value="masculino" class="input_radio"> 
+                            <label for="masculino" class="label_radio">Masculino</label>
+                            <input type="radio" id="feminino" name="sexo" value="feminino" class="input_radio">                   
+                            <label for="feminino" class="label_radio">Feminino</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="cpf">CPF:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="cpf" name="cpf" class="input_txt"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="rg">RG:<label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="rg" name="rg" class="input_txt" style="margin-bottom: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Cadastrar" id="button_cadastrar"></td> 
+                    </tr>
+                    <tr>
+                        <td><a href="index.html"><input type="button" value="Voltar" id="button_voltar"></a></td>
+                    </tr>
+                </table>
+            </form>
+        </main>
+    </body>
+</html>
