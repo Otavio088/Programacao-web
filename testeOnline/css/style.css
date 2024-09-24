@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+}
+
+body .conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.form_questoes {
+    display: none;
+}
+
+form table {
+    font-size: 160%;
+}
+
+form table td {
+    padding: 5px;
+}
+
+form table td {
+    padding: 12px;
+}
+
+form table select{
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.botao {
+    width: 100%;
+    height: 28px;
+    font-size: 80%;
+}
+
+#relatorio {
+    font-size: 160%;
+}

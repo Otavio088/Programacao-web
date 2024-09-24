@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Matematica</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <div class="conteiner">
+        <h1>TESTE DO ALUNO</h1>
+
+        <form action="" class="form_cadastro">
+            <h2>CADASTRO DO ALUNO</h2>
+            <table>
+                <tr>
+                    <td>RM:</td>
+                    <td><input type="number" name="rm" id="rm" required="required"></td>
+                </tr>
+                <tr>
+                    <td>Nome:</td>
+                    <td><input type="text" name="nome" id="nome" required="required"></td>
+                </tr>
+                <tr>
+                    <td>CPF:</td>
+                    <td><input type="cpf" name="cpf" id="cpf" required="required"></td>
+                </tr>
+                <tr>
+                    <td>RG:</td>
+                    <td><input type="text" name="rg" id="rg" required="required"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="Cadastrar" class="botao" onclick="cadastroAluno()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <form action="" class="form_questoes">
+            <h2>QUESTIONÁRIO DO ALUNO</h2>
+            <table>
+                <tr>
+                    <td>1. Quem propôs a teoria da gravidade?</td> <!-- Isaac Newton -->
+                    <td><input name="q1" id="q1"></td>
+                </tr>
+                <tr>
+                    <td>2. Quanto é 50 x 50?</td>
+                    <td><input type="text" name="q2" id="q2" required="required"></td>
+                </tr>
+                <tr>
+                    <td>3. Quem propôs a teoria da relatividade?</td> <!-- Albert Einstein -->
+                    <td><input type="text" name="q3" id="q3" required="required"></td>
+                </tr>
+                <tr>
+                    <td>4. Quanto é 50 / 50?</td>
+                    <td><input type="text" name="q4" id="q4" required="required"></td>
+                </tr>
+                <tr>
+                    <td>5. Quanto é 1 + 1?</td>
+                    <td><input type="text" name="q5" id="q5" required="required"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="respostasq6" required="required">6. Quanto é 5 + 5?</label> <br>
+                        <input type="radio" id="resp6.1" name="respostasq6" value="0">2
+                        <input type="radio" id="resp6.2" name="respostasq6" value="1">10
+                        <input type="radio" id="resp6.3" name="respostasq6" value="2">15 <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="respostasq7" required="required">7. Quanto é 10 x 5?</label> <br>
+                        <input type="radio" id="resp7.1" name="respostasq7" value="0">500
+                        <input type="radio" id="resp7.2" name="respostasq7" value="1">5
+                        <input type="radio" id="resp7.3" name="respostasq7" value="2">50
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="" required="required">8. Quais operações levam ao mesmo resultado?</label> <br>
+                        <input type="checkbox" id="resp8.1" value="0">5 + 5
+                        <input type="checkbox" id="resp8.2" value="1">10 x 1
+                        <input type="checkbox" id="resp8.3" value="2">5 x 5
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="" required="required">9. Quais operações não levam ao mesmo resultado?</label> <br>
+                        <input type="checkbox" id="resp9.1" value="0">5 / 5
+                        <input type="checkbox" id="resp9.2" value="1">1 x 1
+                        <input type="checkbox" id="resp9.3" value="2">5 + 1
+                    </td>
+                </tr>
+                <tr>
+                    <td>10. Selecione a resposta correta:</td>
+                    <td>
+                        <select name="" id="questao10" required="required">
+                            <option value="">selecione...</option>
+                            <option value="resp10.1">2 é um numero negativo</option>
+                            <option value="resp10.2">100 é numero impar</option>
+                            <option value="resp10.3">5 / 5 retorna um inteiro positivo</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="Finalizar Avaliação" class="botao" onclick="calcularMedia()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <div id="relatorio" style="display: none;">
+            <h2>RELATÓRIO DO ALUNO</h2>
+            <h3 id="situacao"></h3>
+            <p id="respostas"></p>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
