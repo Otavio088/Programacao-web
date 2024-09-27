@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação JS</title>
+    <script>
+        function verificarDados() {
+            let codigo_eq = document.getElementById('codigo_eq').value;
+            let nome_eq = document.getElementById('nome_eq').value;
+            let peso_eq = document.getElementById('peso_eq').value;
+
+            if (codigo_eq >= 10 && codigo_eq <= 20) {
+                alert('dentro da faixa');
+            } else {
+                alert('fora da faixa');
+            }
+
+            //manipulação de RadioButton
+            const tipoEquipamento = document.querySelector('input[name="controles"]:checked')?.value;
+            alert('O elemento radio selecionado foi ' + tipoEquipamento);
+
+            //manipulação de Caixa de Seleção
+            const fabricante = document.getElementById('fabricante').value
+
+            //manipulação de CheckBox
+            const manutencoes=[];
+            if (document.getElementById('transfusor').checked) {
+                manutencoes.push(document.getElementById('transfusor').value);
+            }
+            if (document.getElementById('compressor').checked) {
+                manutencoes.push(document.getElementById('compressor').value);
+            }
+            if (document.getElementById('bloco_controle').checked) {
+                manutencoes.push(document.getElementById('bloco_controle').value);
+            }
+            alert(manutencoes.join(','));
+        }
+    </script>
+</head>
+<body>
+    <label for="codigo_eq">Codigo equipamento:</label>
+    <input type="text" name="codigo_eq" id="codigo_eq"> <br>
+    <label for="nome_eq">Nome:</label>
+    <input type="text" name="nome_eq" id="nome_eq"> <br>
+    <label for="peso_eq">Peso nominal:</label>
+    <input type="text" name="peso_eq" id="peso_eq"> <br>
+
+    <!-- Formulário com RadioButton -->
+    <label for="controles">Tipo e Máquina:</label>
+    <input type="radio" id="controleA" name="controles" value="0">Controle A
+    <input type="radio" id="controleB" name="controles" value="1">Controle B
+    <input type="radio" id="controleC" name="controles" value="2">Controle C <br>
+
+    <!-- Formulário com Caixa de Seleção -->
+    <label for="fabricante">Fabricante:</label>
+    <select name="" id="fabricante">
+        <option value="">selecione...</option>
+        <option value="Mac01">Mac01</option>
+        <option value="Mac02">Mac02</option>
+        <option value="Mac03">Mac03</option>
+    </select> <br>
+
+    <!-- Formulário com CheckBox -->
+     <label for="">Itens de Manutenção:</label> <br>
+     <input type="checkbox" id="transfusor" value="transfusor">
+     <label for="transfusor">Transfusor</label> <br>
+     <input type="checkbox" id="compressor" value="compressor">
+     <label for="compressor">Compressor</label> <br>
+     <input type="checkbox" id="bloco_controle" value="bloco_controle">
+     <label for="bloco_controle">Compressor</label> <br>
+
+    <input type="button" onclick="verificarDados();" value="Enviar"></input>
+</body>
+</html>

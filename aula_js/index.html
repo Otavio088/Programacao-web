@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ExemploJS</title>'
+        <script>
+            function mostrarTexto () {
+                var elemento = document.getElementById('palavra');
+                elemento.innerHTML='<b>TESTE</b>';
+            }
+
+            function verificarNome() {
+                var nome = document.getElementById('nome').value;
+                //alert('Seu nome é ' + nome);
+                if (nome.toLowerCase('Gustavo')) { //igual mesmo se escrever Gustavo com g minusculo
+                    alert('É você');
+                } else {
+                    alert('Não é você');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p id="palavra">trocar</p>
+        <button onclick="document.getElementById('palavra').innerHTML='<b>TESTE</b>';">
+            CLIQUE AQUI
+        </button> <!-- pegue o elemento do documento pelo id. O innerHTML é uma função de JS que vai introduzir um html dentro do elemento pego pelo id -->
+        
+        <br><br><br>
+        
+        <button onclick="mostrarTexto();">
+            CLIQUE AQUI
+        </button>
+        
+        <br><br><br>
+
+        <form action="">
+            <label for="nome">Nome:</label>
+            <input type="nome" value="nome" id="nome">
+            <br>
+            <input type="button" value="verificar" onclick="verificarNome();">
+        </form>
+    </body>
+</html>
